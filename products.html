@@ -88,23 +88,20 @@
     </style>
 </head>
 <body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-[#f9f9ff]/70 backdrop-blur-xl shadow-[0px_20px_40px_rgba(16,27,48,0.06)]">
-<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto w-full">
-<div class="text-2xl font-bold tracking-tighter text-[#154212] dark:text-green-500">Star &amp; Co.</div>
-<div class="hidden md:flex items-center gap-8">
-<a class="text-[#42493e] font-body font-medium hover:text-[#154212] transition-colors duration-300" href="#">Milk</a>
-<a class="text-[#42493e] font-body font-medium hover:text-[#154212] transition-colors duration-300" href="#">Cheese</a>
-<a class="text-[#42493e] font-body font-medium hover:text-[#154212] transition-colors duration-300" href="#">Yogurt</a>
-<a class="text-[#42493e] font-body font-medium hover:text-[#154212] transition-colors duration-300" href="about.html">About Us</a>
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 glass-nav bg-stone-50/70 dark:bg-stone-900/70 editorial-shadow" style="backdrop-filter: blur(20px); box-shadow: 0px 20px 40px rgba(16, 27, 48, 0.06);">
+<div class="flex justify-between items-center px-12 py-6 max-w-[1440px] mx-auto">
+<div class="text-2xl font-black text-green-900 dark:text-green-50 tracking-tighter font-headline">Star &amp; Co</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-stone-600 dark:text-stone-400 font-medium font-headline tracking-tight hover:text-green-700 transition-colors" href="index.html">Home</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium font-headline tracking-tight hover:text-green-700 transition-colors" href="our-farms.html">Our Farms</a>
+<a class="text-green-900 dark:text-white border-b-2 border-green-800 pb-1 font-headline font-bold tracking-tight" href="products.html">Products</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium font-headline tracking-tight hover:text-green-700 transition-colors" href="about.html">About Us</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium font-headline tracking-tight hover:text-green-700 transition-colors" href="contact.html">Contact</a>
 </div>
-<div class="flex items-center gap-6">
-<button class="flex items-center gap-2 text-[#154212] dark:text-green-400 font-body font-bold scale-95 duration-200">
-<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
-<span class="hidden sm:inline">Cart</span>
-</button>
-<span class="material-symbols-outlined text-[#42493e]" data-icon="account_circle">account_circle</span>
-</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-3 rounded-full font-headline font-bold text-sm transition-transform hover:scale-105 active:scale-95 shadow-lg">
+                Get Fresh Milk
+            </button>
 </div>
 </nav>
 <main class="pt-24">
