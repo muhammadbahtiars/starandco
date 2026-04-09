@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Star &amp; Co | The Modern Pastoral</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#4e5051",
+                        "surface-container-high": "#e0e8ff",
+                        "error-container": "#ffdad6",
+                        "primary": "#154212",
+                        "on-primary-container": "#9dd090",
+                        "on-background": "#101b30",
+                        "on-error": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#263046",
+                        "on-secondary-container": "#5a647c",
+                        "on-error-container": "#93000a",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#d7e2ff",
+                        "secondary-container": "#d7e2ff",
+                        "on-primary-fixed-variant": "#23501e",
+                        "tertiary-fixed": "#e1e3e4",
+                        "tertiary": "#37393a",
+                        "primary-fixed": "#bcf0ae",
+                        "on-primary-fixed": "#002201",
+                        "secondary-fixed": "#d7e2ff",
+                        "on-surface": "#101b30",
+                        "surface-tint": "#3b6934",
+                        "background": "#f9f9ff",
+                        "surface-container": "#e8edff",
+                        "inverse-primary": "#a1d494",
+                        "surface-bright": "#f9f9ff",
+                        "primary-container": "#2d5a27",
+                        "on-secondary-fixed-variant": "#3c475d",
+                        "outline": "#72796e",
+                        "surface-dim": "#cfdaf6",
+                        "on-tertiary-container": "#c1c2c3",
+                        "on-tertiary-fixed-variant": "#454748",
+                        "surface": "#f9f9ff",
+                        "secondary-fixed-dim": "#bbc6e2",
+                        "outline-variant": "#c2c9bb",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#191c1d",
+                        "secondary": "#545e76",
+                        "on-primary": "#ffffff",
+                        "surface-container-low": "#f1f3ff",
+                        "inverse-on-surface": "#edf0ff",
+                        "on-secondary-fixed": "#101b30",
+                        "primary-fixed-dim": "#a1d494",
+                        "surface-variant": "#d7e2ff",
+                        "on-surface-variant": "#42493e",
+                        "tertiary-fixed-dim": "#c5c7c8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope", "sans-serif"],
+                        "body": ["Plus Jakarta Sans", "sans-serif"],
+                        "label": ["Plus Jakarta Sans", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0px 20px 40px rgba(16, 27, 48, 0.06);
+        }
+        .glass-nav {
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 glass-nav bg-stone-50/70 dark:bg-stone-900/70 editorial-shadow">
+<div class="flex justify-between items-center px-12 py-6 max-w-[1440px] mx-auto">
+<div class="text-2xl font-black text-green-900 dark:text-green-50 tracking-tighter font-headline">Star &amp; Co</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-green-900 dark:text-white border-b-2 border-green-800 pb-1 font-headline font-bold tracking-tight" href="#">Home</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium font-headline tracking-tight hover:text-green-700 transition-colors" href="#">Our Farms</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium font-headline tracking-tight hover:text-green-700 transition-colors" href="#">Products</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium font-headline tracking-tight hover:text-green-700 transition-colors" href="#">About Us</a>
+<a class="text-stone-600 dark:text-stone-400 font-medium font-headline tracking-tight hover:text-green-700 transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-3 rounded-full font-headline font-bold text-sm transition-transform hover:scale-105 active:scale-95 shadow-lg">
+                Get Fresh Milk
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center pt-24 overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-12 grid lg:grid-cols-2 gap-12 items-center relative z-10">
+<div class="space-y-8 max-w-xl">
+<span class="inline-block bg-secondary-container text-primary px-4 py-2 rounded-full text-xs font-bold tracking-widest uppercase">Est. 2004 • Premium Dairy</span>
+<h1 class="text-7xl font-extrabold font-headline text-on-background leading-[1.1] tracking-tighter">
+                    Purity from the <span class="text-primary italic">Pasture</span> to Your Home
+                </h1>
+<p class="text-lg text-on-surface-variant leading-relaxed font-medium">
+                    Experience the unadulterated taste of nature. Our cows graze on heirloom clover, producing milk that's as honest as the morning sun.
+                </p>
+<div class="flex items-center gap-6 pt-4">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all">Explore Our Products</button>
+<button class="flex items-center gap-2 font-bold text-primary group">
+                        Watch Our Story 
+                        <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">play_circle</span>
+</button>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -top-20 -right-20 w-96 h-96 bg-secondary-container/30 rounded-full blur-3xl -z-10"></div>
+<div class="rounded-xl overflow-hidden editorial-shadow transform rotate-2 hover:rotate-0 transition-transform duration-700">
+<img class="w-full h-[600px] object-cover" data-alt="close-up of a healthy dairy cow grazing in a lush green pasture with soft morning mist and golden sunrise light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqh1iFG9OYvJsfFjhr8KZpYAu55CNIO5g18nYgBLRkBU_YYusjry-sRl6gOIY_vOfB_I0JijzLY2WaaLrL_BoKH83YASmYnik-2BoyCpLbCo2OGtnGINkanbzEPbse52AU4e6aU3kFZl-rBr62f5l9gSNTPlXT8pwMdiLBpp743C_wqqU57uTgp8qe1NLCkxmuhMyGW4w1dYkslkqCQQBbSW-rIeebOTUYxfCExa1SxnLEYChZG8HL2KoGRocVUHdjtJjBj6ZeX6PC"/>
+</div>
+<div class="absolute -bottom-12 -left-12 bg-surface p-8 rounded-xl editorial-shadow max-w-[280px] hidden md:block">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">verified</span>
+</div>
+<div>
+<p class="text-xs font-bold text-on-surface-variant">Quality Certified</p>
+<p class="font-bold text-primary">Grade A Organic</p>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">Every bottle is traced back to a specific herd for complete transparency.</p>
+</div>
+</div>
+</div>
+</header>
+<!-- Value Proposition -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-[1440px] mx-auto px-12">
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-12 rounded-xl editorial-shadow group hover:-translate-y-2 transition-all duration-300">
+<div class="w-16 h-16 bg-primary-fixed rounded-xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary text-3xl">eco</span>
+</div>
+<h3 class="text-2xl font-bold font-headline mb-4">100% Organic Feed</h3>
+<p class="text-on-surface-variant leading-relaxed">No pesticides, no shortcuts. Just pure non-GMO grass and grains for the healthiest herds.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-12 rounded-xl editorial-shadow group hover:-translate-y-2 transition-all duration-300">
+<div class="w-16 h-16 bg-secondary-container rounded-xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-secondary text-3xl">precision_manufacturing</span>
+</div>
+<h3 class="text-2xl font-bold font-headline mb-4">Advanced Processing</h3>
+<p class="text-on-surface-variant leading-relaxed">Cold-filtration technology preserves vital nutrients that traditional heating destroys.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-12 rounded-xl editorial-shadow group hover:-translate-y-2 transition-all duration-300">
+<div class="w-16 h-16 bg-primary-fixed-dim rounded-xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-primary text-3xl">local_shipping</span>
+</div>
+<h3 class="text-2xl font-bold font-headline mb-4">Fresh Daily Delivery</h3>
+<p class="text-on-surface-variant leading-relaxed">From the milking parlor to your doorstep in under 24 hours. The peak of freshness.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Us / Heritage -->
+<section class="py-32 overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-12 grid lg:grid-cols-2 gap-24 items-center">
+<div class="relative">
+<div class="grid grid-cols-2 gap-4">
+<img class="rounded-xl h-[400px] object-cover mt-12" data-alt="vintage styled photograph of an old rustic barn with wooden textures and morning sun rays breaking through" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgm6zgplAKf9hroXo3eKK_pUPfaUQE5FHBEtAzl7ZbWGDRicmp67MZ1vee358tnNgzApRkOnhZMdG3pcX_xXCDcPFh1woTLVmIHSShw3PfNS9v6chV8LruGdohBZDmhmiGo0GXVoms0DbeIS7XKWA9xn1M8hozMOtj6oHK90-lggOIhZP3Mug7yYVNeQeZDkMjxDSDebbBPN--cnCafKoVeucSfrYx7Z9edTY0oX8l2PRLEuHxj7ZBbSEPPYkniRRMjCQxhQDO_UPh"/>
+<img class="rounded-xl h-[400px] object-cover" data-alt="modern minimalist dairy laboratory interior with stainless steel equipment and clean bright lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsrEwa_gCVdYuBW4wulIoDLZ_BEB5Coy9tlmTn2INfZQjdoSPgJkiyhcJ5UuDh5UDjHL0sZ_0Ey4Tk6FZiHSCPqYm20YixrxrVuBdkdAVxbR5Hb7233AuYjJ4JrTKEzt18kXSxqMl3C6GZMrkDBl2cL9d1pPorK7dwQRQJ-B0sweMZ2GIgtts6oDcPBGHr1GkQGkpMlehORU6H4YQE-P6etnsWjJ1V-GBSHpdZD4808iNnd2_1h62MrVbLRY_rcm2hf08JzWet5Rgl"/>
+</div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-primary text-on-primary w-40 h-40 rounded-full flex flex-col items-center justify-center text-center p-4 transform -rotate-12 editorial-shadow">
+<span class="text-4xl font-black font-headline">20+</span>
+<span class="text-xs uppercase font-bold">Years of Passion</span>
+</div>
+</div>
+</div>
+<div class="space-y-8">
+<h2 class="text-5xl font-extrabold font-headline leading-tight tracking-tighter">Blending Heritage <br/>with <span class="text-primary-container">Innovation</span></h2>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                    Founded in 2004, Star &amp; Co started as a small family paddock with just ten cows. Today, we've grown into a regional leader in sustainable dairy, but our philosophy hasn't changed.
+                </p>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                    We believe that happy cows produce better milk. That's why our animals enjoy stress-free environments, individual health monitoring, and thousands of acres of wild pasture.
+                </p>
+<div class="pt-6">
+<button class="bg-surface-container text-primary font-bold px-8 py-4 rounded-full transition-colors hover:bg-surface-container-high">Read Our Full Story</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Showcase / Bento Grid -->
+<section class="py-32 bg-surface">
+<div class="max-w-[1440px] mx-auto px-12">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="text-5xl font-extrabold font-headline tracking-tighter mb-4">Our Dairy Collection</h2>
+<p class="text-on-surface-variant max-w-md">Crafted with patience and precision. No additives, just nature.</p>
+</div>
+<button class="text-primary font-bold flex items-center gap-2 group">
+                    View Full Catalog <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Milk - Large Bento -->
+<div class="md:col-span-8 bg-surface-container-low rounded-xl overflow-hidden flex flex-col md:flex-row editorial-shadow group">
+<div class="p-12 md:w-1/2 flex flex-col justify-center">
+<span class="text-primary-container font-bold text-sm tracking-widest uppercase mb-4">Signature</span>
+<h3 class="text-4xl font-bold font-headline mb-6">Whole Cream Milk</h3>
+<p class="text-on-surface-variant mb-8">Non-homogenized with a thick layer of cream on top. Just like it used to be.</p>
+<button class="w-fit bg-primary text-on-primary px-8 py-3 rounded-full text-sm font-bold">Shop Now</button>
+</div>
+<div class="md:w-1/2 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="aesthetic glass bottle of fresh milk splashing into a glass on a wooden table with soft morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTBrFmeSNMbbH-hb9UqTZJn5x5m9a287JEpjEIBTnZcm3E8ct9v-AM5dZgPulgXTiqAkdIufAavge7nAtxZWf_GhEDgWgMZrgVfmnJ7tKGCaMEuij0kDYOdfjKdC598wy0yBkTHkHy3VUcb5KlSs4Pq1iO9e-sWCrNSialmZYNLCu8bSimgKLIbu3K9Wgz1-jZ6OkTBuCZ90sB_zqsHyET5aPFHdd-kKAAZ6pYpMjoUej-vbfjTQmBmCADxh9CW-XSWRLqbzrxAQ2_"/>
+</div>
+</div>
+<!-- Cheese - Tall Bento -->
+<div class="md:col-span-4 bg-surface-container rounded-xl overflow-hidden flex flex-col editorial-shadow group">
+<div class="h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="artisan blocks of aged cheddar cheese on a dark stone board with grapes and honey" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0RJ4sC-q1DN2YPtcz9pXyW6wpahi3LZHY99rRAnsmnbemx606_hqdnKOXUxMC5bG04x8Y-AC69iCqhQKy3ZrXLJG6puGUFVmqaH4--k9p7zJuae5hGWhMEFoRZwejUd_DJvBtkhHGfV_WxH1ZIwCrNU8eJQk3snMxBtpfs7v_9qBcz_TiZximrgwkc_jgz1lV7I3sareizCvUK3sis3uRf6jLyICtReLRY_0BQnhUpPau05Mw9uaaluxUhDB5HSv_IhNqgUmv8cx5"/>
+</div>
+<div class="p-8">
+<h3 class="text-2xl font-bold font-headline mb-2">Aged Artisan Cheese</h3>
+<p class="text-sm text-on-surface-variant">Hand-turned and aged for 18 months for a sharp, nutty profile.</p>
+</div>
+</div>
+<!-- Yogurt - Small Bento -->
+<div class="md:col-span-4 bg-primary-container text-on-primary-container rounded-xl p-8 flex flex-col justify-between editorial-shadow">
+<div>
+<h3 class="text-3xl font-bold font-headline mb-4">Greek Yogurt</h3>
+<p class="text-on-primary-container/80 text-sm">Thick, velvety, and packed with probiotics for gut health.</p>
+</div>
+<div class="mt-8 flex justify-end">
+<span class="material-symbols-outlined text-6xl opacity-20">nest_eco_leaf</span>
+</div>
+</div>
+<!-- Farm Fresh Butter - Wide Bento -->
+<div class="md:col-span-8 bg-surface-container-low rounded-xl overflow-hidden flex editorial-shadow group">
+<div class="p-8 md:w-2/3 flex flex-col justify-center">
+<h3 class="text-2xl font-bold font-headline mb-4">Grass-Fed Cultured Butter</h3>
+<p class="text-sm text-on-surface-variant">Slow-churned with sea salt flakes. Perfectly gold and spreadable.</p>
+</div>
+<div class="md:w-1/3 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="close-up of golden farmhouse butter being spread on a crusty slice of bread in warm kitchen light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxfRRnGWDcMdU1HsrOtX0ZJwpdBb5fKBXDBHShT37LfTkrPf5XAXuzlK79iDwZ_f75_AO7zBuuimBsvSYNNoUMUh61zFqu_RJiiOYkN3ichBgD4el5DQK4G4ld3CuYyvxbqPBQ5TLFcVbuNN7S4_vELAbRDhBlztjcApytlaqL0rAf3ofkzIkKGSbsxRU0Dz3N_wF9RgFH-RLxb3DsMs8Yy6FEWSCYLYyu3DiY3uZfDx-k7FQHyN7XMQkpFMuu2HSwHoFpq8_CBJnM"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats/Impact -->
+<section class="py-24 bg-primary text-on-primary">
+<div class="max-w-[1440px] mx-auto px-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16 text-center">
+<div class="space-y-2">
+<div class="text-6xl font-black font-headline">500+</div>
+<p class="text-primary-fixed uppercase tracking-widest text-sm font-bold">Happy Cows</p>
+</div>
+<div class="space-y-2">
+<div class="text-6xl font-black font-headline">20+</div>
+<p class="text-primary-fixed uppercase tracking-widest text-sm font-bold">Years Excellence</p>
+</div>
+<div class="space-y-2">
+<div class="text-6xl font-black font-headline">50k+</div>
+<p class="text-primary-fixed uppercase tracking-widest text-sm font-bold">Liters Daily</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-32 bg-surface">
+<div class="max-w-[1440px] mx-auto px-12">
+<div class="text-center mb-20">
+<h2 class="text-4xl font-extrabold font-headline mb-4 tracking-tight">Loved by Families</h2>
+<p class="text-on-surface-variant">Trusted by thousands of homes across the country.</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-low p-10 rounded-xl space-y-6">
+<div class="flex text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-lg italic text-on-surface leading-relaxed">"The taste reminds me of my childhood summers on the farm. You can really tell the difference in quality."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-stone-200 rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="portrait of a young woman smiling warmly in soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAU8ufhtb17uMeAJiWl7eq7V9xJFY5vBzsTJnoqRCsD1apASFlo9G3pAS2XpGv02mGj-KuJ-5NJquhSa-b0aX6jb8TnFmeK-f4YBqcbPYjhU6pib13ShOhraLB7M1zfy12Mt5fUosLoz2j_yMe3dwHz8aU73gqUfFds3d9Z8Juqlrif9XI3zexS1LHOhUzaWsscGKUGrxGslM1syEjZEiujT-VGdrjwQNCkolm7w0SVu0M_ZO1NxjxmyXTxAa6Zr1QzK-Rxw4FgjUK"/>
+</div>
+<div>
+<p class="font-bold">Sarah Jenkins</p>
+<p class="text-xs text-on-surface-variant">Home Cook &amp; Mother</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-low p-10 rounded-xl space-y-6">
+<div class="flex text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-lg italic text-on-surface leading-relaxed">"Their Greek yogurt is unparalleled. Thick, creamy, and the perfect base for my morning granola bowls."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-stone-200 rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="portrait of a professional chef in white uniform with blurred kitchen background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8kdDHgi2t2CoSQPhON-zbgVtGQh_XAFQ9khHYJuNfBOXNqx7hG8aMW0xlLd77Hr_WwGPNjiP5etLBbtTKz0eZR6WA8J56qggN2GBc742SRTNu8bjN_gaQpvo1vPGy1QNTpOIgbT8B1t1vv3pqBF-V-O9mHkqkVw3kRXZXKBjH3pzMO3GYMLZ_Bp4K6w8lCBt5Oc4DGW1IrRMB_k_6C9n_eFl-O-UqA-r329oyTZXW9gA9Mr2YIRkq48hYCg6nmjSrFWb9A2yc2MTE"/>
+</div>
+<div>
+<p class="font-bold">Chef Marco Ross</p>
+<p class="text-xs text-on-surface-variant">Lumière Bistro</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-container-low p-10 rounded-xl space-y-6">
+<div class="flex text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-lg italic text-on-surface leading-relaxed">"The transparency is what sold me. Being able to see where my food comes from is so important today."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-stone-200 rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="portrait of a middle aged man with glasses looking confident and friendly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVYQXLpGJmjtVfzDdvw_0J2BIncxBSCxV4VK8QQXeOVib0wumlr5qfHjazFZ-oYASlV__xGsZzoyrpEwqPhFVEArJt-fAOgy4kEUGhXj5AcV84nGOq_sVhaoE20nwm1RDI8SA7M43u_OxSpCC7wDE9L8rb5DHVHZ4fpEmMRjydRfSrYXd4qPgTO-QI0w1DVuumD2o1G2bxAMzZQad4YOO_yhDEeyEJELJgnkp2tHpgwmzVZhKk1tIa2J5F9_FNpB3zkJhkuP5D9XNr"/>
+</div>
+<div>
+<p class="font-bold">David Thompson</p>
+<p class="text-xs text-on-surface-variant">Sustainability Advocate</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="py-24 px-12">
+<div class="max-w-[1440px] mx-auto bg-primary-container rounded-[3rem] overflow-hidden relative">
+<div class="absolute inset-0 opacity-10">
+<img class="w-full h-full object-cover" data-alt="abstract wide landscape shot of rolling green hills at dusk with ethereal atmospheric fog" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4Vhq84Wg9RJMw82va2kmUEj3WX5f3_jITHUKq_uVGBs0MV37BNMjBqf1bL5pB9asRvwCgrSJorXZJbwmiW3101O-dJnoXsCwq8azRndwV8ictQ6aVAj5DerUH4QRf8vCZ1zCTJfcSwLLZg0h9ufq8ACr2MGi0dm9FsHVC2NPTwPW2LXRNuc9ikyECNDYhvp7C2oyBPuo2oeX_mmFePFb0uBR0keFna45JyvgxzsmUMaR9xE_JviOo6NkXyc1sn4iCHRTQ5y5zGOdS"/>
+</div>
+<div class="relative z-10 py-24 px-12 text-center flex flex-col items-center">
+<h2 class="text-5xl font-black font-headline text-on-primary leading-tight mb-8 max-w-3xl">Ready to Taste the Difference? <br/>Join the Star &amp; Co Family Today.</h2>
+<p class="text-on-primary/80 text-xl mb-12 max-w-xl">Subscribe to our weekly delivery service and get 20% off your first month of fresh dairy.</p>
+<div class="flex flex-col sm:flex-row gap-6">
+<button class="bg-surface text-primary px-12 py-5 rounded-full font-bold text-lg editorial-shadow transition-transform hover:scale-105">Get Started</button>
+<button class="border-2 border-surface text-surface px-12 py-5 rounded-full font-bold text-lg hover:bg-surface hover:text-primary transition-all">Find a Store</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full rounded-t-[3rem] mt-24 bg-stone-100 dark:bg-stone-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-[1440px] mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-bold text-green-900 dark:text-green-50 font-headline">Star &amp; Co</div>
+<p class="text-stone-500 text-sm leading-relaxed">
+                    Crafting premium dairy experiences with respect for nature, cattle, and the families we serve.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-stone-200 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-stone-200 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">alternate_email</span>
+</a>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-green-900 dark:text-white font-headline">Company</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 hover:underline decoration-green-800/30 underline-offset-4 text-sm transition-all" href="#">About Us</a></li>
+<li><a class="text-stone-500 hover:underline decoration-green-800/30 underline-offset-4 text-sm transition-all" href="#">Our Farms</a></li>
+<li><a class="text-stone-500 hover:underline decoration-green-800/30 underline-offset-4 text-sm transition-all" href="#">Sustainability Report</a></li>
+<li><a class="text-stone-500 hover:underline decoration-green-800/30 underline-offset-4 text-sm transition-all" href="#">Careers</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-green-900 dark:text-white font-headline">Products</h4>
+<ul class="space-y-4">
+<li><a class="text-stone-500 hover:underline decoration-green-800/30 underline-offset-4 text-sm transition-all" href="#">Organic Milk</a></li>
+<li><a class="text-stone-500 hover:underline decoration-green-800/30 underline-offset-4 text-sm transition-all" href="#">Artisan Cheese</a></li>
+<li><a class="text-stone-500 hover:underline decoration-green-800/30 underline-offset-4 text-sm transition-all" href="#">Greek Yogurt</a></li>
+<li><a class="text-stone-500 hover:underline decoration-green-800/30 underline-offset-4 text-sm transition-all" href="#">Cultured Butter</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-green-900 dark:text-white font-headline">Contact</h4>
+<ul class="space-y-4">
+<li class="text-sm text-stone-500 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                        102 Verdant Way, Greenfield
+                    </li>
+<li class="text-sm text-stone-500 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">call</span>
+                        +1 (555) DAIRY-FRESH
+                    </li>
+<li class="text-sm text-stone-500 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">mail</span>
+                        hello@starandco.com
+                    </li>
+</ul>
+</div>
+</div>
+<div class="max-w-[1440px] mx-auto px-12 pb-12">
+<div class="pt-8 border-t border-stone-200 dark:border-stone-800 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-stone-500 text-xs">© 2024 Star &amp; Co. The Modern Pastoral.</p>
+<div class="flex gap-8">
+<a class="text-stone-500 hover:text-green-900 text-xs transition-colors" href="#">Privacy Policy</a>
+<a class="text-stone-500 hover:text-green-900 text-xs transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
